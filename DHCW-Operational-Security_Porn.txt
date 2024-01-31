@@ -1,3 +1,6 @@
+# Title: DHCW Operational Security blocked domains - porn
+# Date: 31/01/2024
+# =====================================================
 ads.exoclick.com
 assets.porndig.com
 assets.sb-cd.com
