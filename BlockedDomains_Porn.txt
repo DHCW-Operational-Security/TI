@@ -1,6 +1,6 @@
 # Title: DHCW Operational Security blocked domains
 # Category blocked: Porn
-# Date: 13/02/2024
+# Date: 14/02/2024
 # =====================================================
 007milf.com
 0xxx.ws
@@ -499,7 +499,7 @@ avn.com
 avrevenue.com
 awejmp.com
 awempire.com
-ayana.com
+#ayana.com
 azerothica.com
 azgals.com
 aziani.com
