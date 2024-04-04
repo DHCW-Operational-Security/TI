@@ -1,0 +1,40 @@
+// This query looks for emails which contain IoCs based on a list provided by gareth.warke1@nhs.net on 03/04/24 
+// related to a fraud campaign based on fake office supply invoices sent to (mainly) GPs 
+//
+// Define IoC lists based on https://github.com/DHCW-Operational-Security/TI/blob/main/Phishing/OfficeSupplyFraudIoCs.csv
+let hash_list = (externaldata (IoC: string, type: string, comment: string) [ @"https://raw.githubusercontent.com/DHCW-Operational-Security/TI/main/Phishing/OfficeSupplyFraudIoCs.csv"] with (format="csv"))
+| where type == "SHA256"
+| project tostring(IoC);
+let domain_list = (externaldata (IoC: string, type: string, comment: string) [ @"https://raw.githubusercontent.com/DHCW-Operational-Security/TI/main/Phishing/OfficeSupplyFraudIoCs.csv"] with (format="csv"))
+| where type == "Email Domain"
+| project tostring(IoC);
+let URL_list = (externaldata (IoC: string, type: string, comment: string) [ @"https://raw.githubusercontent.com/DHCW-Operational-Security/TI/main/Phishing/OfficeSupplyFraudIoCs.csv"] with (format="csv"))
+| where type == "URL"
+| project tostring(IoC);
+let displayName_list = (externaldata (IoC: string, type: string, comment: string) [ @"https://raw.githubusercontent.com/DHCW-Operational-Security/TI/main/Phishing/OfficeSupplyFraudIoCs.csv"] with (format="csv"))
+| where type == "Email Sender Display Name"
+| project tostring(IoC);
+let address_list = (externaldata (IoC: string, type: string, comment: string) [ @"https://raw.githubusercontent.com/DHCW-Operational-Security/TI/main/Phishing/OfficeSupplyFraudIoCs.csv"] with (format="csv"))
+| where type == "Email Address"
+| project tostring(IoC);
+//
+//
+// Look for emails that contain attachments on the hash list
+let attachmentEmails = 
+    EmailAttachmentInfo 
+    | where SHA256 in~ (hash_list) 
+    | project NetworkMessageId;
+//
+// Look for emails that contain URLs on the list
+let linkEmails = 
+    EmailUrlInfo 
+    | where Url in~ (URL_list) 
+    | project NetworkMessageId;
+//
+EmailEvents
+| where SenderFromAddress in~ (address_list) // known bad senders
+or SenderFromDomain in~ (domain_list) // known bad domains
+or NetworkMessageId in~ (attachmentEmails) // known bad file hashes in attachments
+or NetworkMessageId in~ (linkEmails) // known bad signature logo link
+or (SenderFromAddress =="donotreply@sageone.com"  //legit Sage email address
+    and SenderDisplayName has_any (displayName_list)) // known bad sage instances (based on display name)
