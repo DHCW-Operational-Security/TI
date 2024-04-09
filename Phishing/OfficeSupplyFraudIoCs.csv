@@ -1,20 +1,20 @@
 IoC,Type,Comment
-74d070b1adddd91ee5cccc80dd8d3bfc6421bc5e51ebdb574d05893d391247fe   ,SHA256,PRINT HUB logo
-14219ddc4a2ef8736f58d650581c18ac91ee96b755f81c06780a934e03cac96a  ,SHA256,PRINT EXPERT logo
-ce99bace077e8b971b95e454239d143eeea6b24cc049761d6bf29e268dd83880 ,SHA256,Office Hub logo
-70e59952b1c0cf55f4f1276e280ac5cc4d28025eeaade8e3538da73a92544e6c ,SHA256,Green circle office hub logo
-cfcf22051e97f368761a35f2b8368e029933ff4f5fc1acec656831cd07183749  ,SHA256,white green horiztonal office logo
-920ff06338621bf7d5819401807bda373ac7cbafc9034bab292c49ec468f7366 ,SHA256,Silver and blue office expert
-f5222a80f8b3b00fc48692277ea4298ec305f4efa17d4fb5b2cda2bc5b5e456d  ,SHA256,Complete Office Solutions logo
-0f4a823ef732e8e3fad5375fc7753140444325dc0d084d0985018bd87988f40e ,SHA256,Nhs supply chain.
-59b67f524f82cc8284c6817168b0dacb548fc7d5a9884dee81b29b9fdd89ce1f  ,SHA256,brother supply logo
-fc88669de285086fa65605ce5dc8ae2ef0fe8805454d9582fdec8b47a1c8aec6 ,SHA256,go green logo
-47099a8b5621871b83c689313115ba26c5f70c549e8e89b2cadffb159a0d5947 ,SHA256,Medisave
-3242fd5f16eeb5519bc720734face3579d04be7946302cdf66454db933b6a21f ,SHA256,office expert Dark blue light blue
-42b3f1455a1c557462f6007f2e29c9f877fa39c0a6a2c9f5cc7162f832ae608a   ,SHA256,Epson eco tank
-4d4abf36c9d2f3434fe91fec5fe61d6e3acef0a95972911358d79fa8d95b11c0  ,SHA256,CartridgeHub (they might have used postal invoices for initial contact)
-eee9eee564947bf297403e4af76b6a61edf3bedf491e222661bb74a941cf7533   ,SHA256,cartridge hub professional print solutions (smaller)
-"https://ci3.googleusercontent.com/mail-sig/AIorK4xHnFiZ3u-UO1QxhvdR4T00w6h8QHfv4ednMYi8haZS_jk0EC4Z7re9YQzfwxWMwn7wKf1cjN4""    //Toner Expert logo ",URL,URL to google hosted unique signature logo used by the threat actors
+74d070b1adddd91ee5cccc80dd8d3bfc6421bc5e51ebdb574d05893d391247fe,SHA256,PRINT HUB logo
+14219ddc4a2ef8736f58d650581c18ac91ee96b755f81c06780a934e03cac96a,SHA256,PRINT EXPERT logo
+ce99bace077e8b971b95e454239d143eeea6b24cc049761d6bf29e268dd83880,SHA256,Office Hub logo
+70e59952b1c0cf55f4f1276e280ac5cc4d28025eeaade8e3538da73a92544e6c,SHA256,Green circle office hub logo
+cfcf22051e97f368761a35f2b8368e029933ff4f5fc1acec656831cd07183749,SHA256,white green horiztonal office logo
+920ff06338621bf7d5819401807bda373ac7cbafc9034bab292c49ec468f7366,SHA256,Silver and blue office expert
+f5222a80f8b3b00fc48692277ea4298ec305f4efa17d4fb5b2cda2bc5b5e456d,SHA256,Complete Office Solutions logo
+0f4a823ef732e8e3fad5375fc7753140444325dc0d084d0985018bd87988f40e,SHA256,Nhs supply chain.
+59b67f524f82cc8284c6817168b0dacb548fc7d5a9884dee81b29b9fdd89ce1f,SHA256,brother supply logo
+fc88669de285086fa65605ce5dc8ae2ef0fe8805454d9582fdec8b47a1c8aec6,SHA256,go green logo
+47099a8b5621871b83c689313115ba26c5f70c549e8e89b2cadffb159a0d5947,SHA256,Medisave
+3242fd5f16eeb5519bc720734face3579d04be7946302cdf66454db933b6a21f,SHA256,office expert Dark blue light blue
+42b3f1455a1c557462f6007f2e29c9f877fa39c0a6a2c9f5cc7162f832ae608a,SHA256,Epson eco tank
+4d4abf36c9d2f3434fe91fec5fe61d6e3acef0a95972911358d79fa8d95b11c0,SHA256,CartridgeHub (they might have used postal invoices for initial contact)
+eee9eee564947bf297403e4af76b6a61edf3bedf491e222661bb74a941cf7533,SHA256,cartridge hub professional print solutions (smaller)
+https://ci3.googleusercontent.com/mail-sig/AIorK4xHnFiZ3u-UO1QxhvdR4T00w6h8QHfv4ednMYi8haZS_jk0EC4Z7re9YQzfwxWMwn7wKf1cjN4,URL,URL to google hosted unique signature logo used by the threat actors
 B&B Office Solutions Ltd,Email Sender Display Name,known bad sage instances belonging to these actors
 GLOBAL HEALTHCARE,Email Sender Display Name,known bad sage instances belonging to these actors
 GO GREEN OFFICE SUPPLIES,Email Sender Display Name,known bad sage instances belonging to these actors
@@ -39,11 +39,10 @@ petradesouth@gmail.com,Email Address,Blocked by NHS E
 expaccpay@gmail.com,Email Address,Blocked by NHS E
 tnrexpuk@gmail.com,Email Address,Blocked by NHS E
 medisave@dr.com,Email Address,Blocked by NHS E
-medsupplygroup@dr.com ,Email Address,Blocked by NHS E
+medsupplygroup@dr.com,Email Address,Blocked by NHS E
 globalhc.finance@dr.com,Email Address,Blocked by NHS E
 officehubuk@gmail.com,Email Address,Blocked by NHS E
-"costradeuk@gmail.com
-",Email Address,Blocked by NHS E
+costradeuk@gmail.com,Email Address,Blocked by NHS E
 office-hub@mail.com,Email Address,Blocked by NHS E
 ohubcollections@gmail.com,Email Address,Blocked by NHS E
 cocollectionsdept@gmail.com,Email Address,Blocked by NHS E
@@ -78,8 +77,7 @@ tnrhacc@proton.me,Email Address,Blocked by NHS E
 tnrhacc@proton.me,Email Address,first seen 29 Mar 
 offexp@protonmail.com,Email Address,first seen 29 Mar
 expsouth@aol.com,Email Address,first seen 2 Apr
-peannejardine@gmail.com,Email Address,first seen 08/08/24
-prhbadmin@proton.me,Email Address,first seen 08/08/24
-
 tnhbuk@proton.me,Email Address,first seen 4 Apr
 oeacc@proton.me,Email Address,first seen 5 Apr
+peannejardine@gmail.com,Email Address,first seen 08/08/24
+prhbadmin@proton.me,Email Address,first seen 08/08/24
