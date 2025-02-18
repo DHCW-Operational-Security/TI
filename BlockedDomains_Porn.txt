@@ -482,7 +482,7 @@ atkpremium.com
 atmla.com
 atoananet.com.br
 atubex.com
-aukro.cz
+#aukro.cz - removed 18/02/2025 as this is just a Czech auction site 
 aunteria.com
 auntmia.com
 avadawn.com
